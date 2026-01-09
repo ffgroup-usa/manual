@@ -1,0 +1,10 @@
+{
+  "label": "CAMMRA AI 2.0 Knowledge Base",
+  "position": 3,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "title": "CAMMRA AI 2.0 Knowledge Base",
+    "description": "AI-based data fusion application for vehicle data recognition on Axis cameras with Artpec 8 and 9 processors."
+  }
+}
