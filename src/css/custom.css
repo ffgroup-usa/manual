@@ -1,30 +1,220 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Axis Developer Documentation inspired theme
+ * Based on https://developer.axis.com/
  */
 
-/* You can override the default Infima variables here. */
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primary colors - Axis brown/tan theme */
+  --ifm-color-primary: #9a8b7d;
+  --ifm-color-primary-dark: #8a7a6c;
+  --ifm-color-primary-darker: #7d6e61;
+  --ifm-color-primary-darkest: #665a50;
+  --ifm-color-primary-light: #a99c8f;
+  --ifm-color-primary-lighter: #b8aca1;
+  --ifm-color-primary-lightest: #c7bdb4;
+
+  /* Typography */
+  --ifm-font-family-base: "Open Sans", Arial, sans-serif;
+  --ifm-heading-font-family: "Open Sans", Arial, sans-serif;
+  --ifm-font-weight-semibold: 500;
+  --ifm-heading-font-weight: 500;
+  
+  /* Font sizes */
+  --ifm-h1-font-size: 2rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
+
+  /* Colors */
+  --ifm-font-color-base: #333;
+  --ifm-font-color-secondary: #525860;
+  --ifm-link-color: #333;
+  --ifm-link-hover-color: #333;
+  --ifm-navbar-link-color: #333;
+  --ifm-navbar-link-hover-color: #333;
+  --ifm-navbar-link-active-color: #333;
+  
+  /* Navbar */
+  --ifm-navbar-background-color: #fff;
+  --ifm-navbar-height: 3.75rem;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --ifm-navbar-search-input-background-color: #faf8f6;
+
+  /* Footer */
+  --ifm-footer-background-color: #978c81;
+  --ifm-footer-color: #fff;
+  --ifm-footer-link-color: #fff;
+  --ifm-footer-link-hover-color: #fff;
+
+  /* Menu/Sidebar */
+  --ifm-menu-color: #333;
+  --ifm-menu-color-active: #333;
+  --ifm-menu-color-background-active: rgba(0, 0, 0, 0.05);
+  --ifm-menu-color-background-hover: rgba(0, 0, 0, 0.05);
+
+  /* Code blocks */
+  --ifm-code-background: #f6f7f8;
+  --ifm-pre-background: #f6f7f8;
+  --ifm-code-border-radius: 0.4rem;
+  --ifm-pre-border-radius: 0.4rem;
+
+  /* Borders and backgrounds */
+  --ifm-background-surface-color: #fff;
+  --ifm-toc-border-color: #dadde1;
+  --ifm-toc-link-color: #525860;
+  --ifm-blockquote-border-color: #dadde1;
+  --ifm-table-border-color: #dadde1;
+
+  /* Tabs */
+  --ifm-tabs-color: #525860;
+  --ifm-tabs-color-active: #9a8b7d;
+  --ifm-tabs-color-active-border: #9a8b7d;
+
+  /* Pills/Pagination */
+  --ifm-pagination-color-active: #9a8b7d;
+  --ifm-pills-color-active: #9a8b7d;
+  --ifm-pagination-nav-color-hover: #fc3;
+
+  /* Global */
+  --ifm-global-radius: 0.4rem;
+  --ifm-line-height-base: 1.65;
+  --docusaurus-highlighted-code-line-bg: #484d5b;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #b5a89c;
+  --ifm-color-primary-dark: #a59789;
+  --ifm-color-primary-darker: #9d8e7f;
+  --ifm-color-primary-darkest: #857768;
+  --ifm-color-primary-light: #c5baaf;
+  --ifm-color-primary-lighter: #cdc3b9;
+  --ifm-color-primary-lightest: #ddd5cd;
+  
+  --ifm-background-color: #1c1e21;
+  --ifm-background-surface-color: #242526;
+  --ifm-navbar-background-color: #242526;
+  --ifm-footer-background-color: #1c1e21;
+  
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-font-color-secondary: #b0b0b0;
+  --ifm-link-color: #e3e3e3;
+  --ifm-link-hover-color: #fff;
+  --ifm-navbar-link-color: #e3e3e3;
+  --ifm-menu-color: #e3e3e3;
+  
+  --ifm-code-background: #2d2d2d;
+  --ifm-pre-background: #2d2d2d;
+  --ifm-toc-border-color: #444;
+  --ifm-blockquote-border-color: #444;
+  --ifm-table-border-color: #444;
+  
+  --docusaurus-highlighted-code-line-bg: #3d3d3d;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: var(--ifm-navbar-shadow);
+}
+
+.navbar__title {
+  font-weight: 500;
+}
+
+/* Sidebar styling */
+.menu__link {
+  font-size: 0.9375rem;
+  border-radius: 0.25rem;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--ifm-menu-color-background-active);
+}
+
+/* TOC (Table of Contents) styling */
+.table-of-contents__link {
+  font-size: 0.8125rem;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* Article/Doc content */
+.markdown h1:first-child {
+  font-size: 2rem;
+}
+
+.markdown > h2 {
+  margin-top: 2rem;
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  background-color: transparent;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--ifm-footer-background-color);
+}
+
+.footer__title {
+  color: var(--ifm-footer-color);
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-footer-link-hover-color);
+}
+
+/* Search input */
+.navbar__search-input {
+  background-color: var(--ifm-navbar-search-input-background-color);
+  border-radius: var(--ifm-global-radius);
+}
+
+/* Smooth transitions */
+a, .menu__link, .navbar__link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Code blocks */
+pre {
+  border: none;
+}
+
+code {
+  border: none;
+  vertical-align: baseline;
+}
+
+/* Admonitions/Alerts */
+.alert {
+  border-radius: var(--ifm-global-radius);
+  border-left-width: 5px;
+}
+
+/* Tables */
+table {
+  display: table;
+  width: 100%;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme='dark'] th {
+  background-color: rgba(255, 255, 255, 0.05);
 }
