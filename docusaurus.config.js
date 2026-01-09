@@ -14,6 +14,10 @@ const config = {
   tagline: 'Documentation',
   favicon: 'img/favicon.ico',
 
+  markdown: {
+    format: 'md',
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
