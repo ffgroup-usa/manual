@@ -24,7 +24,7 @@ For technical support, please visit the [FF Group Customer Hub](https://customer
 ## Marketing material
 - [Datasheet](https://example.com)
 
-[![License Plate Lists Interface](./img/ffvideo.png)](https://workdrive.zohoexternal.com/external/de35948edd3eb8dd358d8c0b532bc95a2a271a3b4926495fd8102d9a37ed262d)
+[![Video](./img/ffvideo.png)](https://workdrive.zohoexternal.com/external/de35948edd3eb8dd358d8c0b532bc95a2a271a3b4926495fd8102d9a37ed262d)
 
 <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
   <iframe
