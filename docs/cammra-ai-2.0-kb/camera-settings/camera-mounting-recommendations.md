@@ -31,14 +31,14 @@ If the image appears tilted beyond this threshold, it is recommended to adjust t
 
 | Plate Type | Example | FHD | 4K |
 |------------|---------|-----|----|
-| USA License plate with stacked characters | Pennsylvania | 140-350 px | 140-500 px |
-| USA 1-line License plate | California | 90-350 px | 130-500 px |
-| 1-line EU, TUR, ISR, South American plates | Germany | 80-350 px | 120-500 px |
-| 2-line EU plates | Germany (2-line) | 80-350 px | 110-500 px |
-| GCC long plates | UAE/Oman | 90-350 px | 120-500 px |
-| GCC short plates | UAE/Oman | 80-350 px | 110-500 px |
-| GCC motorcycle plates | UAE/Oman | 80-350 px | 110-500 px |
-| 2-line GCC KSA plates | Saudi Arabia | 120-350 px | 120-500 px |
+| USA License plate with stacked characters | ![USA Stacked](./img/plates/usa-stacked.png) | 140-350 px | 140-500 px |
+| USA 1-line License plate | ![USA 1-line](./img/plates/usa-1line.png) | 90-350 px | 130-500 px |
+| 1-line EU, TUR, ISR, South American plates | ![EU 1-line](./img/plates/eu-1line.png) | 80-350 px | 120-500 px |
+| 2-line EU plates | ![EU 2-line](./img/plates/eu-2line.png) | 80-350 px | 110-500 px |
+| GCC long plates | ![GCC Long](./img/plates/gcc-long.png) | 90-350 px | 120-500 px |
+| GCC short plates | ![GCC Short](./img/plates/gcc-short.png) | 80-350 px | 110-500 px |
+| GCC motorcycle plates | ![GCC Motorcycle](./img/plates/gcc-motorcycle.png) | 80-350 px | 110-500 px |
+| 2-line GCC KSA plates | ![GCC KSA 2-line](./img/plates/gcc-ksa-2line.png) | 120-350 px | 120-500 px |
 
 ## Optimal Camera Installation Point
 
