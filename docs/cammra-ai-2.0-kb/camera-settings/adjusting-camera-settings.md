@@ -30,11 +30,8 @@ title: Adjusting Camera Settings
 | One lane | Two lanes |
 |----------|----------|
 | FULL HD resolution | North American and GCC plates, 4K resolution |
-| | EU + South African plates, FULL HD resolution |
-
-![One Lane Example](./img/camera-settings-1.jpg)
-
-![Two Lanes Example](./img/camera-settings-2.jpg)
+|  | EU + South African plates, FULL HD resolution |
+| ![One Lane Example](./img/camera-settings-1.jpg) | ![Two Lanes Example](./img/camera-settings-2.jpg) |
 
 Pixel density, achieved with 4K camera resolution for EU + South African plates, allows capturing the width of three lanes. However, due to the limited performance of the IR backlight during nighttime, installation for covering three-lane traffic is not recommended.
 
@@ -91,3 +88,9 @@ It is generally recommended to **reduce or disable WDR**. While these settings o
 ---
 
 By following these steps and fine-tuning the camera settings, you can optimize license plate visibility and enhance the accuracy of license plate recognition within CAMMRA AI.
+
+:::Danger
+At night, when the camera is automatically or manually set to black-and-white night mode, the Make, Model, Recognition (MMR),
+and color detection functionalities are disabled.
+Consequently, make, model, vehicle type, and color information cannot be captured during night time.
+:::
