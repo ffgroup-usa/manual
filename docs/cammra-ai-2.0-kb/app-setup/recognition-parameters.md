@@ -12,9 +12,7 @@ To access the settings in CAMMRA AI and customize the application according to y
 1. **Plate Width Min. and Max:**  
    The plate width size settings determine the minimum and maximum width of license plates that CAMMRA AI will recognize.
    
-   It is recommended to use these values unless specific adjustments are required:
-   - For Europe: min width 130px
-   - For USA: 90px
+   It is recommended to use default values unless specific adjustments are required.
 
 2. **Number of Symbols:**  
    Set the range for the minimum number of symbols in license plates for the region or country templates.

@@ -14,8 +14,6 @@ Correct regional settings will help CAMMRA AI application classify captured lice
 1. **Region:** Choose the supported LPR regions based on your deployment location.  
    CAMMRA AI works in various regions of Europe (including Turkey and Israel), South Africa, Australia, New Zealand, and North America.
 
-![Region Selection](./img/location-setup-2.png)
-
    Available regions:
    - Europe
    - North America

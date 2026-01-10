@@ -40,7 +40,7 @@ In Genetec integration it's not possible to choose the event type. CAMMRA AI sen
 - **Frame downsized** - Shows a reduced size full frame
 - **Full frame** - Shows the complete camera frame
 
-For instructions how to setup this integration on Genetec side, follow-up [this instruction](https://techdocs.genetec.com/r/en-US/AutoVu-third-party-ALPR-Plugin-Guide-2.0/Installing-the-plug-in) (it works the same as for CAMMRA).
+For instructions how to setup this integration on Genetec side, follow-up [this instruction](https://customerhub.ff-group.ai/portal/en/kb/articles/integration-to-genetec).
 
 ---
 
@@ -66,6 +66,3 @@ If integration is properly configured, in 2N you should see something like this:
 
 ![2N Events Log](./img/direct-integration-6.png)
 
----
-
-![CAMMRA AI](./img/cammra-ai-logo.png)
