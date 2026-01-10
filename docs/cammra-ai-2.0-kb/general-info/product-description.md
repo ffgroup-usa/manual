@@ -20,7 +20,7 @@ CAMMRA AI also has the ability to detect vehicles without license plates, delive
 Moreover, compared to other ACAP solutions and previous generations of the app (CAMMRA), speed measurement from radar (Axis) and sound localization and measurement (Sorama) are possible to be added on top of above mentioned parameters. With CAMMRA AI running on DLE video-fusion cameras, the vehicle data are enriched by vehicle speed (in km/h or mph) and if installed together with Sorama L642V units, vehicle loudness (in dbA) is attached to every vehicle event.
 
 :::tip External link
-There is dedicated part of our Customer hub to these solutions. [link](/link)
+There is dedicated part of our Customer hub to these solutions. [link](http://example.com/)
 :::
 
 CAMMRA AI is specifically designed to handle higher speeds and multiple lanes or less traditional LPR scenarios like intersections, making it suitable for a wide range of traffic scenarios. The application offers seamless integration through an open API, allowing users to connect and integrate with other systems effortlessly. The primary option for integration is FF DataFactory - a data fusion platform from FF Group, which is a unique place to centralize meta-data from even hundreds of cameras equipped with CAMMRA AI, CAMMRA or Axis License Plate Verifier apps. Moreover, it provides valuable traffic insights and receives also other data to correlate with vehicle information.
