@@ -89,8 +89,7 @@ It is generally recommended to **reduce or disable WDR**. While these settings o
 
 By following these steps and fine-tuning the camera settings, you can optimize license plate visibility and enhance the accuracy of license plate recognition within CAMMRA AI.
 
-:::Danger
-At night, when the camera is automatically or manually set to black-and-white night mode, the Make, Model, Recognition (MMR),
-and color detection functionalities are disabled.
+:::danger Warning!
+At night, when the camera is automatically or manually set to black-and-white night mode, the Make, Model, Recognition (MMR), and color detection functionalities are disabled.
 Consequently, make, model, vehicle type, and color information cannot be captured during night time.
 :::
