@@ -5,7 +5,7 @@ title: Product Description
 
 # Product Description
 
-![CAMMRA AI Overview](../img/product-description-1.png)
+![CAMMRA AI Overview](../img/product-description-1.png){: width="300px" }
 
 CAMMRA AI is an AI-based data fusion application for vehicle data recognition.
 
