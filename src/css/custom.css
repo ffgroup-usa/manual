@@ -1,14 +1,85 @@
 /**
- * Axis Developer Documentation inspired theme
+ * Axis Developer Documentation Theme
  * Based on https://developer.axis.com/
  */
 
 /* Import Open Sans font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+/* ============================================
+   AXIS COLOR PALETTE
+   ============================================ */
 :root {
-  /* Primary colors - Axis brown/tan theme */
-  --ifm-color-primary: #9a8b7d;
+  /* Axis Yellow Colors */
+  --axis-color-yellow-01: #fffae9;
+  --axis-color-yellow-02: #fff0c5;
+  --axis-color-yellow-03: #ffdb6e;
+  --axis-color-yellow-04: #fc3; /* Primary accent */
+  --axis-color-yellow-05: #f5c430;
+  --axis-color-yellow-06: #e7ac00;
+  --axis-color-yellow-07: #bc8d00;
+  --axis-color-yellow-08: #8d6900;
+
+  /* Axis Warm Gray Colors */
+  --axis-color-warm-gray-01: #faf8f6; /* Light background */
+  --axis-color-warm-gray-02: #f7f3f1;
+  --axis-color-warm-gray-03: #e6e3e0;
+  --axis-color-warm-gray-04: #d8cfc6;
+  --axis-color-warm-gray-06: #9a8b7d; /* Primary brand color */
+
+  /* Axis Gray Colors */
+  --axis-color-gray-01: #e6e5e5;
+  --axis-color-gray-02: #ccc;
+  --axis-color-gray-04: #8c8c8c;
+  --axis-color-gray-05: #666;
+  --axis-color-gray-06: #555;
+  --axis-color-gray-07: #444;
+  --axis-color-gray-08: #333; /* Primary text color */
+
+  /* Axis Blue Colors */
+  --axis-color-blue-01: #eff9ff;
+  --axis-color-blue-03: #72cdf4;
+  --axis-color-blue-04: #009ddc; /* Links */
+  --axis-color-blue-07: #004966;
+
+  /* Axis Red Colors */
+  --axis-color-red-01: #fff5f7;
+  --axis-color-red-04: #f03;
+  --axis-color-red-06: #b5121b;
+  --axis-color-red-07: #670014;
+
+  /* Axis Brand Colors */
+  --axis-color-brand-01: var(--axis-color-yellow-04); /* Accent */
+  --axis-color-brand-02: var(--axis-color-warm-gray-04);
+  --axis-color-brand-03: var(--axis-color-warm-gray-06); /* Primary */
+  --axis-color-brand-08: var(--axis-color-blue-04); /* Links */
+
+  /* Axis Dark Mode Colors */
+  --axis-color-dark-01: #181818;
+  --axis-color-dark-02: #292929;
+  --axis-color-dark-03: #3d3d3d;
+}
+
+/* ============================================
+   LIGHT MODE THEME
+   ============================================ */
+:root {
+  /* Semantic color mappings */
+  --color-primary: var(--axis-color-brand-03);
+  --color-accentuate: var(--axis-color-brand-01);
+  --color-accentuate-high-contrast: var(--axis-color-yellow-05);
+  --color-background: var(--axis-color-warm-gray-01);
+  --color-background-alternate: #fff;
+  --color-text: var(--axis-color-gray-08);
+  --color-text-link: var(--axis-color-gray-08);
+  --color-text-link-hover: var(--axis-color-gray-08);
+  --color-text-link-accentuate: var(--axis-color-brand-08);
+  --color-text-link-accentuate-hover: var(--axis-color-brand-08);
+  --color-footer-background: #978c81;
+  --color-footer-text: #fff;
+
+  /* Primary colors */
+  --ifm-color-primary: var(--color-primary);
   --ifm-color-primary-dark: #8a7a6c;
   --ifm-color-primary-darker: #7d6e61;
   --ifm-color-primary-darkest: #665a50;
@@ -19,9 +90,12 @@
   /* Typography */
   --ifm-font-family-base: "Open Sans", Arial, sans-serif;
   --ifm-heading-font-family: "Open Sans", Arial, sans-serif;
+  --ifm-font-weight-light: 300;
+  --ifm-font-weight-normal: 400;
   --ifm-font-weight-semibold: 500;
-  --ifm-heading-font-weight: 500;
-  
+  --ifm-font-weight-bold: 700;
+  --ifm-heading-font-weight: var(--ifm-font-weight-semibold);
+
   /* Font sizes */
   --ifm-h1-font-size: 2rem;
   --ifm-h2-font-size: 1.5rem;
@@ -29,65 +103,94 @@
   --ifm-h4-font-size: 1rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
+  --ifm-code-font-size: 95%;
 
   /* Colors */
-  --ifm-font-color-base: #333;
+  --ifm-font-color-base: var(--color-text);
   --ifm-font-color-secondary: #525860;
-  --ifm-link-color: #333;
-  --ifm-link-hover-color: #333;
-  --ifm-navbar-link-color: #333;
-  --ifm-navbar-link-hover-color: #333;
-  --ifm-navbar-link-active-color: #333;
-  
+  --ifm-link-color: var(--color-text-link);
+  --ifm-link-hover-color: var(--color-text-link-hover);
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: underline;
+
+  /* Background */
+  --ifm-background-color: transparent;
+  --ifm-background-surface-color: var(--color-background-alternate);
+
   /* Navbar */
   --ifm-navbar-background-color: #fff;
   --ifm-navbar-height: 3.75rem;
   --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  --ifm-navbar-search-input-background-color: #faf8f6;
+  --ifm-navbar-link-color: var(--color-text-link);
+  --ifm-navbar-link-hover-color: var(--color-text-link-hover);
+  --ifm-navbar-link-active-color: var(--color-text-link);
+  --ifm-navbar-search-input-background-color: var(--color-background);
 
   /* Footer */
-  --ifm-footer-background-color: #978c81;
-  --ifm-footer-color: #fff;
-  --ifm-footer-link-color: #fff;
-  --ifm-footer-link-hover-color: #fff;
+  --ifm-footer-background-color: var(--color-footer-background);
+  --ifm-footer-color: var(--color-footer-text);
+  --ifm-footer-link-color: var(--color-footer-text);
+  --ifm-footer-link-hover-color: var(--color-footer-text);
 
   /* Menu/Sidebar */
-  --ifm-menu-color: #333;
-  --ifm-menu-color-active: #333;
+  --ifm-menu-color: var(--color-text);
+  --ifm-menu-color-active: var(--color-text);
   --ifm-menu-color-background-active: rgba(0, 0, 0, 0.05);
   --ifm-menu-color-background-hover: rgba(0, 0, 0, 0.05);
 
   /* Code blocks */
   --ifm-code-background: #f6f7f8;
-  --ifm-pre-background: #f6f7f8;
+  --ifm-pre-background: var(--ifm-code-background);
   --ifm-code-border-radius: 0.4rem;
-  --ifm-pre-border-radius: 0.4rem;
+  --ifm-pre-border-radius: var(--ifm-code-border-radius);
+  --ifm-pre-line-height: 1.45;
+  --ifm-pre-padding: 1rem;
 
-  /* Borders and backgrounds */
-  --ifm-background-surface-color: #fff;
-  --ifm-toc-border-color: #dadde1;
-  --ifm-toc-link-color: #525860;
-  --ifm-blockquote-border-color: #dadde1;
-  --ifm-table-border-color: #dadde1;
+  /* Borders */
+  --ifm-toc-border-color: var(--ifm-color-emphasis-300);
+  --ifm-toc-link-color: var(--ifm-color-content-secondary);
+  --ifm-blockquote-border-color: var(--ifm-color-emphasis-300);
+  --ifm-table-border-color: var(--ifm-color-emphasis-300);
 
   /* Tabs */
-  --ifm-tabs-color: #525860;
-  --ifm-tabs-color-active: #9a8b7d;
-  --ifm-tabs-color-active-border: #9a8b7d;
+  --ifm-tabs-color: var(--ifm-font-color-secondary);
+  --ifm-tabs-color-active: var(--ifm-color-primary);
+  --ifm-tabs-color-active-border: var(--ifm-tabs-color-active);
 
-  /* Pills/Pagination */
-  --ifm-pagination-color-active: #9a8b7d;
-  --ifm-pills-color-active: #9a8b7d;
-  --ifm-pagination-nav-color-hover: #fc3;
+  /* Pagination */
+  --ifm-pagination-color-active: var(--ifm-color-primary);
+  --ifm-pagination-nav-color-hover: var(--color-accentuate);
+
+  /* Pills */
+  --ifm-pills-color-active: var(--ifm-color-primary);
+  --ifm-pills-color-background-active: var(--ifm-hover-overlay);
+
+  /* Breadcrumbs */
+  --ifm-breadcrumb-item-background-active: transparent;
+  --ifm-breadcrumb-color-active: var(--color-text);
 
   /* Global */
   --ifm-global-radius: 0.4rem;
   --ifm-line-height-base: 1.65;
-  --docusaurus-highlighted-code-line-bg: #484d5b;
+  --ifm-hover-overlay: rgba(0, 0, 0, 0.05);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* Dark mode */
+/* ============================================
+   DARK MODE THEME
+   ============================================ */
 [data-theme='dark'] {
+  --color-primary: var(--axis-color-brand-03);
+  --color-accentuate: var(--axis-color-brand-01);
+  --color-accentuate-high-contrast: var(--axis-color-yellow-05);
+  --color-background: var(--axis-color-dark-01);
+  --color-background-alternate: var(--axis-color-dark-02);
+  --color-text: #d6d6d6;
+  --color-text-link: #d6d6d6;
+  --color-text-link-hover: #fff;
+  --color-footer-background: var(--axis-color-dark-03);
+  --color-footer-text: #d6d6d6;
+
   --ifm-color-primary: #b5a89c;
   --ifm-color-primary-dark: #a59789;
   --ifm-color-primary-darker: #9d8e7f;
@@ -95,73 +198,155 @@
   --ifm-color-primary-light: #c5baaf;
   --ifm-color-primary-lighter: #cdc3b9;
   --ifm-color-primary-lightest: #ddd5cd;
-  
-  --ifm-background-color: #1c1e21;
-  --ifm-background-surface-color: #242526;
-  --ifm-navbar-background-color: #242526;
-  --ifm-footer-background-color: #1c1e21;
-  
-  --ifm-font-color-base: #e3e3e3;
+
+  --ifm-background-color: var(--color-background);
+  --ifm-background-surface-color: var(--color-background-alternate);
+
+  --ifm-navbar-background-color: var(--axis-color-dark-02);
+  --ifm-navbar-link-color: var(--color-text-link);
+  --ifm-navbar-link-hover-color: var(--color-text-link-hover);
+  --ifm-navbar-search-input-background-color: var(--color-background);
+
+  --ifm-footer-background-color: var(--color-footer-background);
+  --ifm-footer-color: var(--color-footer-text);
+  --ifm-footer-link-color: var(--color-footer-text);
+  --ifm-footer-link-hover-color: #fff;
+
+  --ifm-font-color-base: var(--color-text);
   --ifm-font-color-secondary: #b0b0b0;
-  --ifm-link-color: #e3e3e3;
-  --ifm-link-hover-color: #fff;
-  --ifm-navbar-link-color: #e3e3e3;
-  --ifm-menu-color: #e3e3e3;
-  
-  --ifm-code-background: #2d2d2d;
-  --ifm-pre-background: #2d2d2d;
-  --ifm-toc-border-color: #444;
-  --ifm-blockquote-border-color: #444;
-  --ifm-table-border-color: #444;
-  
-  --docusaurus-highlighted-code-line-bg: #3d3d3d;
+  --ifm-link-color: var(--color-text-link);
+  --ifm-link-hover-color: var(--color-text-link-hover);
+
+  --ifm-menu-color: var(--color-text);
+  --ifm-menu-color-active: #fff;
+  --ifm-menu-color-background-active: rgba(255, 255, 255, 0.05);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.05);
+
+  --ifm-code-background: rgba(255, 255, 255, 0.1);
+  --ifm-pre-background: var(--ifm-code-background);
+
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+  --ifm-blockquote-border-color: var(--ifm-color-emphasis-200);
+  --ifm-table-border-color: var(--ifm-color-emphasis-200);
+
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+  --docusaurus-highlighted-code-line-bg: #141727;
 }
 
-/* Navbar styling */
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
+main {
+  background-color: var(--color-background);
+}
+
+/* ============================================
+   NAVBAR STYLING
+   ============================================ */
 .navbar {
   box-shadow: var(--ifm-navbar-shadow);
 }
 
 .navbar__title {
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
 }
 
-/* Sidebar styling */
+.navbar__link:hover {
+  text-decoration: underline var(--color-accentuate);
+}
+
+/* ============================================
+   SIDEBAR/MENU STYLING
+   ============================================ */
 .menu__link {
   font-size: 0.9375rem;
+  font-weight: var(--ifm-font-weight-normal);
   border-radius: 0.25rem;
+}
+
+.menu__link--active {
+  font-weight: var(--ifm-font-weight-semibold);
 }
 
 .menu__link--active:not(.menu__link--sublist) {
   background-color: var(--ifm-menu-color-background-active);
 }
 
-/* TOC (Table of Contents) styling */
+/* ============================================
+   TABLE OF CONTENTS STYLING
+   ============================================ */
 .table-of-contents__link {
-  font-size: 0.8125rem;
+  font-size: 0.8rem;
 }
 
 .table-of-contents__link--active {
   color: var(--ifm-color-primary);
-  font-weight: 500;
+  font-weight: var(--ifm-font-weight-semibold);
 }
 
-/* Article/Doc content */
+/* ============================================
+   MARKDOWN CONTENT STYLING
+   ============================================ */
+.markdown {
+  --ifm-h1-vertical-rhythm-top: 3;
+  --ifm-h2-vertical-rhythm-top: 2;
+  --ifm-h3-vertical-rhythm-top: 1.5;
+  --ifm-heading-vertical-rhythm-top: 1.25;
+  --ifm-h1-vertical-rhythm-bottom: 1.25;
+  --ifm-heading-vertical-rhythm-bottom: 1;
+  --ifm-link-color: var(--color-text-link-accentuate);
+  --ifm-link-hover-color: var(--color-text-link-accentuate-hover);
+  --ifm-link-decoration: underline;
+  --ifm-link-hover-decoration: underline var(--color-text-link-accentuate-hover);
+}
+
 .markdown h1:first-child {
-  font-size: 2rem;
+  --ifm-h1-font-size: 3rem;
+  margin-bottom: calc(var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading));
 }
 
 .markdown > h2 {
-  margin-top: 2rem;
+  --ifm-h2-font-size: 2rem;
+  margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
 }
 
-/* Breadcrumbs */
+.markdown > h3 {
+  --ifm-h3-font-size: 1.5rem;
+  margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
+}
+
+.markdown img {
+  background-color: #fff;
+  box-shadow: 0 0 5px var(--color-text);
+}
+
+/* ============================================
+   BREADCRUMBS STYLING
+   ============================================ */
+.breadcrumbs {
+  text-transform: uppercase;
+}
+
 .breadcrumbs__link {
   background-color: transparent;
   padding: 0.4rem 0.8rem;
 }
 
-/* Footer */
+/* ============================================
+   PAGINATION STYLING
+   ============================================ */
+.pagination-nav .pagination-nav__label {
+  font-size: var(--ifm-h5-font-size);
+  text-transform: uppercase;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-pagination-nav-color-hover);
+}
+
+/* ============================================
+   FOOTER STYLING
+   ============================================ */
 .footer {
   background-color: var(--ifm-footer-background-color);
 }
@@ -178,34 +363,37 @@
   color: var(--ifm-footer-link-hover-color);
 }
 
-/* Search input */
-.navbar__search-input {
-  background-color: var(--ifm-navbar-search-input-background-color);
-  border-radius: var(--ifm-global-radius);
+.footer__copyright {
+  opacity: 0.6;
 }
 
-/* Smooth transitions */
-a, .menu__link, .navbar__link {
-  transition: color 0.2s ease, background-color 0.2s ease;
-}
-
-/* Code blocks */
+/* ============================================
+   CODE BLOCKS STYLING
+   ============================================ */
 pre {
   border: none;
 }
 
 code {
-  border: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   vertical-align: baseline;
 }
 
-/* Admonitions/Alerts */
+pre code {
+  border: none;
+}
+
+/* ============================================
+   ADMONITIONS/ALERTS STYLING
+   ============================================ */
 .alert {
   border-radius: var(--ifm-global-radius);
   border-left-width: 5px;
 }
 
-/* Tables */
+/* ============================================
+   TABLES STYLING
+   ============================================ */
 table {
   display: table;
   width: 100%;
@@ -217,4 +405,42 @@ th {
 
 [data-theme='dark'] th {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================================
+   EDIT THIS PAGE LINK
+   ============================================ */
+.theme-edit-this-page {
+  font-size: smaller;
+}
+
+.theme-edit-this-page > svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+/* ============================================
+   TRANSITIONS
+   ============================================ */
+a,
+.menu__link,
+.navbar__link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================ */
+@media (max-width: 576px) {
+  .markdown h1:first-child {
+    --ifm-h1-font-size: 2rem;
+  }
+
+  .markdown > h2 {
+    --ifm-h2-font-size: 1.5rem;
+  }
+
+  .markdown > h3 {
+    --ifm-h3-font-size: 1.25rem;
+  }
 }
