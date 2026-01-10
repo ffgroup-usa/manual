@@ -47,3 +47,47 @@ Navigate to the camera's installation settings. Enable the pixel counter and che
 Adjust the camera's position if needed to meet these size requirements.
 
 ![Axis Camera Settings](./img/camera-settings-3.png)
+
+## Recommendations on Mounting and Adjusting
+
+### IR LEDs for Nighttime Operation
+
+Ensure that the camera is equipped with IR LEDs if license plate recognition is required during nighttime operation.
+
+### Shutter Speed
+
+The shutter speed must be set high enough to suppress glare from vehicle headlights at night. Typically, a value around **1/1000** is recommended.
+
+:::caution
+Excessively high shutter speeds may blur or obscure fine details, especially the edges of characters or shadows on the license plate.
+:::
+
+### Mounting Location and Sunlight
+
+When selecting the camera mounting location, take sunrise and sunset angles into consideration. Direct sunlight can significantly distort the image.
+
+### Pole Stability
+
+If the camera is mounted on a roadside pole, verify the stability of the pole under real traffic conditions. Some poles may vibrate noticeably when heavy vehicles or convoys pass by, which can make license plate recognition extremely unreliable or impossible.
+
+### Day/Night Verification
+
+After optimizing the camera settings for daytime conditions, always verify performance at night, and vice versa. Lighting conditions can have a substantial impact on recognition results, and settings that work well in daylight may not be suitable after dark.
+
+### Measuring License Plate Pixels
+
+If you are unsure how many pixels the license plate occupies in the image, you can:
+
+1. **Use a graphic editor**: Capture a full-frame screenshot and measure it using a graphic editing tool such as Photoshop. Most image editors provide ruler or measurement tools suitable for this purpose.
+
+2. **Check on the camera**: Navigate to the camera's installation settings. Enable the pixel counter and check.
+
+### WDR Settings
+
+:::tip Recommendation
+It is generally recommended to **reduce or disable WDR**. While these settings often improve overall image appearance, they can blur small but critical details such as the edges of license plate characters.
+:::
+
+---
+
+By following these steps and fine-tuning the camera settings, you can optimize license plate visibility and enhance the accuracy of license plate recognition within CAMMRA AI.
