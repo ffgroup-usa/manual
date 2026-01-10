@@ -26,20 +26,14 @@ For technical support, please visit the [FF Group Customer Hub](https://customer
 
 [![Video](./img/ffvideo.png)](https://workdrive.zohoexternal.com/external/de35948edd3eb8dd358d8c0b532bc95a2a271a3b4926495fd8102d9a37ed262d)
 
-<div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
   <iframe
     src="https://www.youtube.com/embed/_jEaslCO-rk"
     title="YouTube video"
-    frameBorder="0"
+    frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-    }}
-  />
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
 </div>
 
