@@ -42,8 +42,4 @@ If the image appears tilted beyond this threshold, it is recommended to adjust t
 
 ## Optimal Camera Installation Point
 
-![Installation Position 1](../img/installation-position-1.png)
-
-![Installation Position 2](../img/installation-position-2.png)
-
 ![Installation Examples](../img/installation-examples.png)
