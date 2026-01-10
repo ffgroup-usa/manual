@@ -12,7 +12,7 @@ title: CAMMRA AI Links
 
 ## Documentation
 
-- [Complete product manual](http://example.com)
+- [Complete product manual](/docs/cammra-ai-2.0-manual)
 - [Release notes](https://workdrive.zohoexternal.com/external/writer/cd5854814f595ed93f6ebb9b5d9a574d31c26195908d0530b865479f81b79e8c)
 - [Quick installation guide](https://workdrive.zohoexternal.com/external/fdb34a24c2d423039c71447584b323738545a50149f3d573e1e91db9f8eba0b9)
 - [Axis product information](https://docs.google.com/spreadsheets/d/1j24lx8lrI4z_eGXliojJwLRov3znm8Oc0se3622Dhi0/edit?gid=0#gid=0) - To understand camera parameters including ARTPEC version, resolution, memory, etc.
@@ -22,8 +22,9 @@ title: CAMMRA AI Links
 For technical support, please visit the [FF Group Customer Hub](https://customerhub.ff-group.ai/portal/en/home) or contact us at support@ff-group.ai.
 
 ## Marketing material
-- [Datasheet](https://example.com)
+- [Datasheet]("/files/CAMMRA AI datasheet.pdf")
 
+### Video
 [![Video](./img/ffvideo.png)](https://workdrive.zohoexternal.com/external/de35948edd3eb8dd358d8c0b532bc95a2a271a3b4926495fd8102d9a37ed262d)
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
