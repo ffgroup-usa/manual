@@ -22,7 +22,7 @@ title: CAMMRA AI Links
 For technical support, please visit the [FF Group Customer Hub](https://customerhub.ff-group.ai/portal/en/home) or contact us at support@ff-group.ai.
 
 ## Marketing material
-- [Datasheet]("/files/CAMMRA AI datasheet.pdf")
+- [Datasheet](/files/CAMMRA-AI-datasheet.pdf)
 
 ### Video
 [![Video](./img/ffvideo.png)](https://workdrive.zohoexternal.com/external/de35948edd3eb8dd358d8c0b532bc95a2a271a3b4926495fd8102d9a37ed262d)
