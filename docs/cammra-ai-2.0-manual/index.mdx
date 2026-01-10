@@ -4,118 +4,104 @@ title: CAMMRA AI 2.0 Full Manual
 slug: /cammra-ai-2.0-manual
 ---
 
-import ProductOverview from './_partials/_product-overview.mdx';
-import SupportedCameras from './_partials/_supported-cameras.mdx';
-import MountingRecommendations from './_partials/_mounting-recommendations.mdx';
-import CameraSettings from './_partials/_camera-settings.mdx';
-import StorageRecommendations from './_partials/_storage-recommendations.mdx';
-import Installation from './_partials/_installation.mdx';
-import RoiSetup from './_partials/_roi-setup.mdx';
-import LocationSetup from './_partials/_location-setup.mdx';
-import ImageSettings from './_partials/_image-settings.mdx';
-import RecognitionParams from './_partials/_recognition-params.mdx';
-import ListManagement from './_partials/_list-management.mdx';
-import IntegrationVapix from './_partials/_integration-vapix.mdx';
-import IntegrationPush from './_partials/_integration-push.mdx';
-import IntegrationBarrier from './_partials/_integration-barrier.mdx';
+import ProductDescription from '../cammra-ai-2.0-kb/general-info/product-description.md';
+import SupportedCameras from '../cammra-ai-2.0-kb/general-info/supported-cameras.md';
+import PowerHandling from '../cammra-ai-2.0-kb/general-info/power-handling-recommendations.md';
+import MountingRecommendations from '../cammra-ai-2.0-kb/camera-settings/camera-mounting-recommendations.md';
+import StorageRecommendations from '../cammra-ai-2.0-kb/camera-settings/storage-sd-card-recommendations.md';
+import CameraSettings from '../cammra-ai-2.0-kb/camera-settings/adjusting-camera-settings.md';
+import Installing from '../cammra-ai-2.0-kb/app-setup/installing-cammra-ai.md';
+import RoiSetup from '../cammra-ai-2.0-kb/app-setup/region-of-interest-setup.md';
+import LocationSetup from '../cammra-ai-2.0-kb/app-setup/location-setup.md';
+import ImageSettings from '../cammra-ai-2.0-kb/app-setup/image-settings.md';
+import RecognitionParams from '../cammra-ai-2.0-kb/app-setup/recognition-parameters.md';
+import StoredEvents from '../cammra-ai-2.0-kb/app-setup/settings-stored-events.md';
+import BackupRestore from '../cammra-ai-2.0-kb/app-setup/backup-restore-configuration.md';
+import SecurityConfig from '../cammra-ai-2.0-kb/app-setup/security-configuration.md';
+import ListManagement from '../cammra-ai-2.0-kb/list-management/managing-license-plate-lists.md';
+import BarrierControl from '../cammra-ai-2.0-kb/integration/barrier-control-scenario.md';
+import Vapix from '../cammra-ai-2.0-kb/integration/vapix.md';
+import FtpIntegration from '../cammra-ai-2.0-kb/integration/ftp-integration.md';
+import PushEvents from '../cammra-ai-2.0-kb/integration/push-events-configuration.md';
+import DirectIntegration from '../cammra-ai-2.0-kb/integration/direct-integration.md';
+import Keepalive from '../cammra-ai-2.0-kb/integration/keepalive.md';
+import SampleJson from '../cammra-ai-2.0-kb/integration/sample-json-data.md';
 
 # CAMMRA AI 2.0 Full Manual
 
-![CAMMRA AI Overview](/img/kb/product-description-1-cr.png)
-
-**CAMMRA AI** is an AI-based data fusion application for vehicle data recognition, developed for Axis cameras with ARTPEC-8 and ARTPEC-9 processors.
-
-This comprehensive manual covers installation, configuration, and integration of CAMMRA AI.
+This comprehensive manual covers installation, configuration, and integration of CAMMRA AI - the AI-based vehicle data recognition application for Axis cameras.
 
 ---
 
-## Table of Contents
+## Part 1: General Information
 
-1. [Product Overview](#1-product-overview)
-2. [Supported Cameras](#2-supported-cameras)
-3. [Camera Mounting & Settings](#3-camera-mounting--settings)
-4. [Installation](#4-installation)
-5. [Application Setup](#5-application-setup)
-6. [List Management](#6-list-management)
-7. [Integration](#7-integration)
-
----
-
-## 1. Product Overview
-
-<ProductOverview />
-
----
-
-## 2. Supported Cameras
+<ProductDescription />
 
 <SupportedCameras />
 
+<PowerHandling />
+
 ---
 
-## 3. Camera Mounting & Settings
+## Part 2: Camera Setup
 
-### 3.1 Mounting Recommendations
+Before installing CAMMRA AI, ensure your camera is properly mounted and configured for optimal license plate recognition.
 
 <MountingRecommendations />
 
-### 3.2 Optimal Camera Settings
+<StorageRecommendations />
 
 <CameraSettings />
 
-### 3.3 Storage (SD Card) Recommendations
-
-<StorageRecommendations />
-
 ---
 
-## 4. Installation
+## Part 3: Application Installation & Setup
 
-### 4.1 Installing CAMMRA AI
+This section covers the installation process and initial configuration of CAMMRA AI.
 
-<Installation />
-
----
-
-## 5. Application Setup
-
-### 5.1 Region of Interest (ROI) Setup
+<Installing />
 
 <RoiSetup />
 
-### 5.2 Location Setup
-
 <LocationSetup />
-
-### 5.3 Image Settings
 
 <ImageSettings />
 
-### 5.4 Recognition Parameters
-
 <RecognitionParams />
+
+<StoredEvents />
+
+<BackupRestore />
+
+<SecurityConfig />
 
 ---
 
-## 6. List Management
+## Part 4: List Management
+
+Manage allow lists, block lists, and custom lists for vehicle access control.
 
 <ListManagement />
 
 ---
 
-## 7. Integration
+## Part 5: Integration
 
-### 7.1 VAPIX Events
+CAMMRA AI offers multiple integration options to connect with external systems.
 
-<IntegrationVapix />
+<BarrierControl />
 
-### 7.2 Push Events (HTTP POST / TCP)
+<Vapix />
 
-<IntegrationPush />
+<FtpIntegration />
 
-### 7.3 Barrier Control
+<PushEvents />
 
-<IntegrationBarrier />
+<DirectIntegration />
+
+<Keepalive />
+
+<SampleJson />
 
 ---
 
