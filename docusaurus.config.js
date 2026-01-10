@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   markdown: {
-    format: 'md',
+    format: 'detect',
   },
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

@@ -1,0 +1,28 @@
+![License Plate Lists Interface](/img/kb/list-management/managing-lists-1.png)
+
+### Available Lists
+
+- **Allow List** - Whitelisted plates (trigger allow events)
+- **Block List** - Blacklisted plates (trigger block events)
+- **Custom List** - For specific use cases
+
+### Adding License Plates
+
+1. Navigate to **LISTS** tab
+2. Enter license plate number or pattern:
+   - Use `?` for single character wildcard: `SL???`
+   - Use `*` for multiple characters: `M*`
+3. Optionally add description
+
+### Camera Synchronization
+
+Share license plate lists across cameras:
+
+1. Enter target camera IP, username, password
+2. Click **Add** to include camera
+3. Click **Camera Synchronization**
+4. Verify **Last Sync** timestamp
+
+:::warning
+Synchronization **overrides** existing lists on target camera.
+:::
