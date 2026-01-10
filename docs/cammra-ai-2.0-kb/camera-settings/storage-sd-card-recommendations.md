@@ -11,6 +11,21 @@ CAMMRA AI supports both internal storage and SD card storage.
 It is **recommended to use an SD card**, especially in traffic solutions where data is transferred to external systems, to prevent data loss during connectivity issues.
 :::
 
+## Why Use an SD Card?
+
+- **Traffic monitoring environments**: In high-density areas with frequent license plate detection, an SD card helps prevent data loss during connectivity issues or heavy traffic conditions.
+
+- **Camera storage management**: The application continuously interacts with the camera's internal memory. If that memory becomes full, the application may be unable to save new data, resulting in the potential loss of information.
+
+- **System stability**: When internal memory is overloaded, some cameras may perform a hard reset as a protective measure. Using an SD card helps mitigate this risk.
+
+- **Storage capacity**: Without an SD card, the CAMMRA AI application can store a limited number of events based on image settings:
+  - **Full Frame** – up to 3 images
+  - **Vehicle Crop** – up to 10 images
+  - **License Plate Crop** – up to 1,000 images
+
+With an SD card installed, the application can store up to **100,000 events**.
+
 ## SD Card Usage
 
 - SD card must be installed, mounted, and formatted via:
