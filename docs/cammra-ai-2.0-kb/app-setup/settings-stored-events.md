@@ -19,7 +19,7 @@ To configure the storage settings for events in CAMMRA, follow these steps:
 2. **Determine the Storage Duration for Events:**
    Specify the duration for which events should be stored in the CAMMRA AI system.
    Select from the following options:
-   - **No limit:** Events will be stored indefinitely, allowing you to retain a complete historical record (depends on storage).
+   - **No limit:** Events will be stored indefinitely, allowing you to retain a complete historical record (depends on storage size).
    - **1 day:** Events will be stored for one day before being automatically deleted.
    - **7 days:** Events will be stored for seven days before being automatically deleted.
    - **30 days:** Events will be stored for 30 days before being automatically deleted.

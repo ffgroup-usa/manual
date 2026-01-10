@@ -18,7 +18,7 @@ Defines the folder hierarchy on the FTP server.
 Defines the image filename format.
 
 ### Delimiter
-Specifies the character used to separate values in the filename (for example `_` or `-`).
+Specifies the character used to separate values in the filename (`_` or `-`).
 
 ### Result Preview
 Displays the final generated path and filename based on the current configuration.
@@ -26,8 +26,6 @@ Displays the final generated path and filename based on the current configuratio
 ## Available Variables
 
 ### Path Variables
-
-![Path Variables](./img/ftp-integration-2.png)
 
 | Variable | Description |
 |----------|-------------|

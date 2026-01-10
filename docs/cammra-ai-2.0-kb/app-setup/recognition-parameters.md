@@ -19,10 +19,10 @@ To access the settings in CAMMRA AI and customize the application according to y
    It is advised to keep this range as narrow as possible to ensure accurate recognition based on regional license plate patterns.
 
 3. **Result delay and Lost event delay:**  
-   Result delay sets how long after the first detection (new event) the waits and accumulates other detections for.
+   Result delay sets how long after the first detection (new event) the waits and accumulates other detections for a better consolidated result.
 
 4. **LPR Confidence Threshold:**  
-   Adjust the LPR confidence threshold to determine the minimum confidence level required for a license plate.
+   Adjust the LPR confidence threshold to determine the minimum confidence level required for a license plate detection.
    A threshold of 0.4 is typically recommended, striking a balance between detection rate and false recognitions.
    Lower thresholds increase the detection rate but may also result in more false recognitions.
 

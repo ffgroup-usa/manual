@@ -63,6 +63,6 @@ Follow these steps to set up event sending:
    This event occurs when a detected vehicle has been absent from the recognition zone for more than 10 seconds.
 
 7. **Send two images:**
-   Sending of two Images now supported, second photo is always the license plate crop, first is the selected one.
+   Sending of two Images now supported, second photo is always the license plate crop, first is the selected one (vehicle crop, full frame, downsized frame).
 
 By configuring these settings, you can establish the communication and data exchange between CAMMRA AI and other applications or systems. This enables you to seamlessly integrate the recognized data into your preferred workflow and utilize it for further analysis or processing.
