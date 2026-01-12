@@ -1,10 +1,10 @@
 {
-  "label": "CAMMRA AI 1.3",
-  "position": 3,
+  "label": "[OLD] CAMMRA AI 1.3",
+  "position": 5,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "title": "CAMMRA AI 1.3",
+    "title": "[OLD] CAMMRA AI 1.3",
     "description": "AI-based data fusion application for vehicle data recognition on Axis cameras."
   }
 }
