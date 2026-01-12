@@ -45,5 +45,5 @@ If the image appears tilted beyond this threshold, it is recommended to adjust t
 ![Installation Examples](../img/installation-examples.png)
 
 :::caution Recommendation
-See [Adjusting camera settings article](adjusting-camera-settings)
+See [Adjusting camera settings article](/docs/cammra-ai-2.0-kb/camera-settings/adjusting-camera-settings)
 :::

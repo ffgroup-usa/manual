@@ -40,7 +40,7 @@ Pixel density, achieved with 4K camera resolution for EU + South African plates,
 Navigate to the camera's installation settings. Enable the pixel counter and check that the width of a single-row license plate is not less than about 130 pixels.
 
 :::caution Recommendation
-See Recommended License Plate Size for different plate types in the [Camera mounting recommendations article](camera-mounting-recommendations)
+See Recommended License Plate Size for different plate types in the [Camera mounting recommendations article](/docs/cammra-ai-2.0-kb/camera-settings/camera-mounting-recommendations)
 :::
 
 Adjust the camera's position if needed to meet these size requirements.
@@ -92,7 +92,7 @@ It is generally recommended to **reduce or disable WDR**. While these settings o
 By following these steps and fine-tuning the camera settings, you can optimize license plate visibility and enhance the accuracy of license plate recognition within CAMMRA AI.
 
 :::caution Recommendation
-See [Camera mounting recommendations article](camera-mounting-recommendations)
+See [Camera mounting recommendations article](/docs/cammra-ai-2.0-kb/camera-settings/camera-mounting-recommendations)
 :::
 
 :::danger Warning!
