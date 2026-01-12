@@ -77,5 +77,3 @@ If no SD card is present, internal storage supports only:
 - **3 Full Frame images**
 - **10 Vehicle crop images**
 - **1,000 LP crops**
-
-![Axis Supported Cameras](./img/axis-supported.png)
